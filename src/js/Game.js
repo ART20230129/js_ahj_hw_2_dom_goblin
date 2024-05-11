@@ -1,6 +1,6 @@
 export default class Game {
   constructor() {
-    this.arrGameBoard;
+    this.arrGameBoard = [];
   }
 
   startGame() {
@@ -18,7 +18,7 @@ export default class Game {
 
     if (this.goblinPosition !== newPosition) { // включаем рисунок на новом месте
       this.goblinPosition = newPosition;
-      console.log(this.goblinPosition);
+      // console.log(this.goblinPosition);
       this.arrGameBoard[this.goblinPosition].classList.add('goblin');
     }
   }
